@@ -26,7 +26,7 @@ namespace Lab_two_starter
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ExpenseReportPage expenseReportPage = new ExpenseReportPage();
+            ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);
             this.NavigationService.Navigate(expenseReportPage);
         }
     }
