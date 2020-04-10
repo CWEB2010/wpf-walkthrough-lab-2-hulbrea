@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace Lab_two_starter
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ExpenseItHome.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class ExpenseItHome : Page
     {
-        public MainWindow()
+        public ExpenseItHome()
         {
             InitializeComponent();
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ExpenseReportPage expenseReportPage = new ExpenseReportPage();
+            this.NavigationService.Navigate(expenseReportPage);
         }
     }
 }
